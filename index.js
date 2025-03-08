@@ -66,6 +66,9 @@ function nextQuestion(){
     if(currentQuestion>=JSONObj.length){
         questionEl.textContent = 'Quiz Completed!!';
         optionEl.textContent = '';
+        if(JSONObj.length == currentQuestion){
+            nextBtn.style.display = "none";
+        }
     }
     else{
         showQuestion();

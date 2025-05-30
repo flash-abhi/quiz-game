@@ -65,7 +65,7 @@ function nextQuestion(){
     currentQuestion++;
     if(currentQuestion>=JSONObj.length){
         questionEl.textContent = 'Quiz Completed!!';
-        optionEl.textContent = '';
+        optionEl.style.display = 'none';
         if(JSONObj.length == currentQuestion){
             nextBtn.style.display = "none";
         }
